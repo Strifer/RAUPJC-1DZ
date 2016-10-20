@@ -42,5 +42,6 @@ namespace _2Zadatak
         /// Determines whether the collection contains a specific value .
         /// </ summary >
         bool Contains(X item);
-    }
+    }
+
 }
