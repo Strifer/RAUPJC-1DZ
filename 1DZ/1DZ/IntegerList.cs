@@ -19,6 +19,10 @@ namespace _1DZ
 
         public IntegerList(int initialSize)
         {
+            if (initialSize <= 0)
+            {
+                throw new ArgumentException("List size must be positive.");
+            }
             _internalStorage = new int[initialSize];
             count = 0;
         }
@@ -59,9 +63,9 @@ namespace _1DZ
 
         public bool Contains(int item)
         {
-            foreach (int i in _internalStorage)
+            for (int i = 0; i < count; i++)
             {
-                if (item == i)
+                if (item == _internalStorage[i])
                 {
                     return true;
                 }
@@ -71,7 +75,7 @@ namespace _1DZ
 
         public int GetElement(int index)
         {
-            if (index < 0 || index > count )
+            if (index < 0 || index >= count )
             {
                 throw new IndexOutOfRangeException();
             }
@@ -81,7 +85,7 @@ namespace _1DZ
 
         public int IndexOf(int item)
         {
-            for (int i = 0; i<_internalStorage.Length; i++)
+            for (int i = 0; i<count; i++)
             {
                 if (_internalStorage[i] == item)
                 {
@@ -104,7 +108,7 @@ namespace _1DZ
                 return false;
             }
 
-            for (int i=index; i<_internalStorage.Length-1; i++)
+            for (int i=index; i<count-1; i++)
             {
                 _internalStorage[i] = _internalStorage[i + 1];
             }

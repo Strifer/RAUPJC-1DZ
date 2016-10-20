@@ -22,6 +22,8 @@ namespace _1DZ
             list.Add(5);
             Console.WriteLine(list);
 
+            Console.WriteLine(list.Contains(0));
+
             list.RemoveAt(0);
             Console.WriteLine(list);
             list.Remove(5);
