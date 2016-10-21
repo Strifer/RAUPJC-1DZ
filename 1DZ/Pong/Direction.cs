@@ -14,10 +14,10 @@ namespace Pong
         public static readonly Direction SW = new Direction(-1, 1);
         public static readonly Direction SE = new Direction(1, 1);
 
-        private int x;
-        private int y;
+        private float x;
+        private float y;
 
-        public int X
+        public float X
         {
             get
             {
@@ -25,13 +25,13 @@ namespace Pong
             }
             private set
             {
-
+                this.x = value;
             }
         }
 
 
 
-        public int Y
+        public float Y
         {
             get
             {
@@ -40,12 +40,12 @@ namespace Pong
 
             private set
             {
-
+                this.y = value;
             }
         }
 
 
-        private Direction(int x, int y)
+        private Direction(float x, float y)
         {
             X = x;
             Y = y;
@@ -54,6 +54,11 @@ namespace Pong
         public static Direction operator *(Direction d1, Direction d2)
         {
             return new Direction(d1.X * d2.X, d1.Y * d2.Y);
+        }
+
+        public static Direction operator *(Direction d1, float scalar)
+        {
+            return new Direction(d1.X * scalar, d1.Y * scalar);
         }
     }
 }

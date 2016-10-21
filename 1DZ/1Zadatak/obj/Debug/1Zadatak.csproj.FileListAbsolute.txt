@@ -3,4 +3,3 @@ C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\1Zadatak\bin\Debug\1DZ.exe
 C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\1Zadatak\bin\Debug\1DZ.pdb
 C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\1Zadatak\obj\Debug\1DZ.exe
 C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\1Zadatak\obj\Debug\1DZ.pdb
-C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\1Zadatak\obj\Debug\1Zadatak.csprojResolveAssemblyReference.cache
