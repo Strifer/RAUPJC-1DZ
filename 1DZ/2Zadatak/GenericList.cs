@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _2Zadatak
 {
-    class GenericList<X> : IGenericList <X>
+    public class GenericList<X> : IGenericList <X>
     {
 
         private X[] _internalStorage;
@@ -145,18 +145,18 @@ namespace _2Zadatak
             return GetEnumerator();
         }
 
-        private class GenericListEnumerator<X> : IEnumerator<X>
+        private class GenericListEnumerator<T> : IEnumerator<T>
         {
-            private GenericList<X> genericList;
+            private GenericList<T> genericList;
             private int index;
 
-            public GenericListEnumerator(GenericList<X> genericList)
+            public GenericListEnumerator(GenericList<T> genericList)
             {
                 this.genericList = genericList;
                 this.index = -1;
             }
 
-            public X Current
+            public T Current
             {
                 get
                 {

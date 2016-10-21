@@ -1,5 +1,4 @@
 C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\2Zadatak\bin\Debug\2Zadatak.exe.config
-C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\2Zadatak\obj\Debug\2Zadatak.csprojResolveAssemblyReference.cache
 C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\2Zadatak\bin\Debug\2Zadatak.exe
 C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\2Zadatak\bin\Debug\2Zadatak.pdb
 C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\2Zadatak\obj\Debug\2Zadatak.exe

@@ -1,0 +1,4 @@
+C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\GenericList\bin\Debug\GenericList.dll
+C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\GenericList\bin\Debug\GenericList.pdb
+C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\GenericList\obj\Debug\GenericList.dll
+C:\Users\Filip\Documents\FER\C#\Labosi\RAUPJC-1DZ\1DZ\GenericList\obj\Debug\GenericList.pdb
