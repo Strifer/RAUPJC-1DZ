@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -132,6 +133,67 @@ namespace _2Zadatak
             }
             sb.Append(_internalStorage[count - 1].ToString() + "]");
             return sb.ToString();
+        }
+
+        public IEnumerator<X> GetEnumerator()
+        {
+            return new GenericListEnumerator<X>(this);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        private class GenericListEnumerator<X> : IEnumerator<X>
+        {
+            private GenericList<X> genericList;
+            private int index;
+
+            public GenericListEnumerator(GenericList<X> genericList)
+            {
+                this.genericList = genericList;
+                this.index = -1;
+            }
+
+            public X Current
+            {
+                get
+                {
+                    try
+                    {
+                        return genericList.GetElement(index);
+                    }
+                    catch (IndexOutOfRangeException)
+                    {
+                        throw new InvalidOperationException();
+                    }
+                }
+            }
+
+            object IEnumerator.Current
+            {
+                get
+                {
+                    return Current;
+                }
+            }
+
+            public void Dispose()
+            {
+
+            }
+
+            public bool MoveNext()
+            {
+                index++;
+                return (index < genericList.Count);
+            }
+
+            public void Reset()
+            {
+                this.index = -1;
+            }
         }
     }
 }

@@ -25,6 +25,12 @@ namespace _1DZ
 
             Console.WriteLine(list.Contains("nula"));
 
+            Console.WriteLine("Foreach test:");
+            foreach (string s in list)
+            {
+                Console.WriteLine(s);
+            }
+
             list.RemoveAt(0);
             Console.WriteLine(list);
             list.Remove("tri");
@@ -36,6 +42,8 @@ namespace _1DZ
             Console.WriteLine(list);
             Console.WriteLine(list.Count);
             Console.ReadKey();
+
+
         }
 
     }
